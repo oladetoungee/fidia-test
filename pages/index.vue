@@ -92,10 +92,10 @@
             <div class="info-num">
               <h2>1,210</h2>
               
-              <p><img src="~assets/images/arrow.svg" alt="">  10% vs last month</p></div>
+              <p><img src="~assets/images/arrow-down.svg" alt="">  10% vs last month</p></div>
             
             <div class="info-graph">
-               <img src="~assets/images/_Chart.svg" alt="">
+               <img src="~assets/images/Chart.svg" alt="">
             </div>
           </div>
         </div>
@@ -114,6 +114,25 @@
                <img src="~assets/images/_Chart.svg" alt="">
             </div>
           </div>
+        </div>
+      </div>
+      <div class="section-3">
+        <div class="left-3">
+          <button class="date-btn">
+          All time  <img src="~assets/images/x.svg" alt="">
+          </button>
+          <button class="date-btn">
+            US, AU, +4  <img src="~assets/images/x.svg" alt="">
+          </button>
+          <button class="more-btn">
+              <img src="~assets/images/more.svg" alt="">  More filters
+          </button>
+        </div>
+        
+        <div class="header-search">
+            <button class="search-btn">
+              <img src="~assets/images/Iconnn.svg" alt="">Search
+            </button>
         </div>
       </div>
     
@@ -236,7 +255,7 @@ export default {
     margin: -2rem ;
     margin-left: .2rem;
   }
-  .section-2 {
+  .section-2, .section-3 {
     
     margin:5rem 5rem 0rem 3rem;
     display: flex;
@@ -258,4 +277,20 @@ export default {
     justify-content: space-between;
     padding: 1rem;
   }
+  
+  .date-btn {
+    background: #F9F5FF;
+    color: #6941C6;
+  border: 1px solid #F9F5FF;
+  }
+  .more-btn {
+    padding: .7rem;
+    background: #FFFFFF;
+    border: 1px solid #D0D5DD;
+    box-sizing: border-box;
+    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+    border-radius: 8px;
+  }
+  
+  
 </style>
