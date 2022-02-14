@@ -108,7 +108,7 @@ export default {
     box-shadow: 0px 1px 3px rgba(16, 24, 40, 0.1),
         0px 1px 2px rgba(16, 24, 40, 0.06);
     border-radius: 8px;
-    padding: 0 1rem;
+    padding: 0 .7rem;
     margin-right: .5rem;
     }
     .avatar-btn {
