@@ -1,58 +1,6 @@
 <template>
   <div>
-    <header>
-      <div class="header-nav">
-        <div class="header-left">
-          <div class="logo-bar">
-            <img src="~assets/images/Logo.svg" alt="" />
-          </div>
-          <div class="nav-bar">
-            <ul class="nav-list">
-              <li class="nav-item"><nuxt-link to="">Home</nuxt-link></li>
-              <li class="nav-item"><nuxt-link to="">Dashboard</nuxt-link></li>
-              <li class="nav-item"><nuxt-link to="">Projects</nuxt-link></li>
-              <li class="nav-item"><nuxt-link to="">Tasks</nuxt-link></li>
-              <li class="nav-item"><nuxt-link to="">Reporting</nuxt-link></li>
-              <li class="nav-item"><nuxt-link to="">Users</nuxt-link></li>
-            </ul>
-          </div>
-        </div>
-        <div class="header-right">
-          <button class="upgrade-btn">
-            <img src="~assets/images/Icon.svg" alt="" />
-            Upgrade now
-          </button>
-
-          <div class="setting-btn">
-            <img src="~assets/images/Iconn.svg" alt="" />
-          </div>
-          <div class="icon-btn">
-            <img src="~assets/images/button.svg" alt="" />
-          </div>
-          <div class="icon-btn">
-            <img src="~assets/images/Avatar.svg" alt="" />
-          </div>
-        </div>
-      </div>
-
-      <div class="header-bottom">
-        <div class="overview-list">
-          <ul class="nav-list">
-            <li class="nav-item"><nuxt-link to="">Overview</nuxt-link></li>
-            <li class="nav-item"><nuxt-link to="">Notifications</nuxt-link></li>
-            <li class="nav-item"><nuxt-link to="">Analytics</nuxt-link></li>
-            <li class="nav-item"><nuxt-link to="">Saved report</nuxt-link></li>
-            <li class="nav-item"><nuxt-link to="">Trade history</nuxt-link></li>
-            <li class="nav-item"><nuxt-link to="">User report</nuxt-link></li>
-          </ul>
-        </div>
-        <div class="header-search">
-          <button class="search-btn">
-            <img src="~assets/images/Iconnn.svg" alt="" />Search
-          </button>
-        </div>
-      </div>
-    </header>
+    <Header></Header>
     <section>
       <div class="section-1">
         <div class="welcome">
@@ -144,14 +92,15 @@
         </div>
 
         <div class="header-search">
-          <button class="search-btn">
-            <img src="~assets/images/Iconnn.svg" alt="" />Search
-          </button>
+          <form class="search-btn">
+            <img src="~assets/images/Iconnn.svg" alt="" />
+            <input type="search" placeholder="Search" />
+          </form>
         </div>
       </div>
       <div class="section-4">
         <table>
-          <tr>
+          <tr class="table-head">
             <td class="company-infos">
               <input type="checkbox" class="company-info" />
               <p class="company-info">Company</p>
@@ -162,7 +111,7 @@
             <td><p>Users</p></td>
             <td><p>About</p></td>
           </tr>
-          <tr>
+          <tr  class="table-odd">
             <td class="company-infos">
               <input type="checkbox" class="company-info" />
               <img
@@ -196,6 +145,7 @@
                   alt=""
                   class="avatar"
                 />
+                <h4 class="users-number">+5</h4>
               </div>
             </td>
             <td>
@@ -213,13 +163,61 @@
             <td class="company-infos">
               <input type="checkbox" class="company-info" />
               <img
-                src="~assets/images/company1.svg"
+                src="~assets/images/circoles.svg"
                 alt=""
                 class="company-info"
               />
               <div class="company-info">
-                <h5>Catalog</h5>
-                <p>catalogapp.io</p>
+                <h5>Circooles</h5>
+                <p>getcirooles.com</p>
+              </div>
+            </td>
+            <td><img src="~assets/images/Progress bar.svg" alt="" /></td>
+            <td>Churned</td>
+            <td>
+              <div class="company-avatar">
+                <img src="~assets/images/Avatar-1.svg" alt="" class="avatar" />
+                <img
+                  src="~assets/images/Avatar (3).svg"
+                  alt=""
+                  class="avatar"
+                />
+                <img src="~assets/images/Avatar-1.svg" alt="" class="avatar" />
+                <img
+                  src="~assets/images/Avatar (2).svg"
+                  alt=""
+                  class="avatar"
+                />
+                <img
+                  src="~assets/images/Avatar (3).svg"
+                  alt=""
+                  class="avatar"
+                />
+                <h4 class="users-number">+8</h4>
+              </div>
+            </td>
+            <td>
+              <div class="company-info">
+                <h5>Design software</h5>
+                <p>Super lightweight design app</p>
+              </div>
+            </td>
+            <td class="info-edit">
+              <img src="~assets/images/delete.svg" alt="" />
+              <img src="~assets/images/edit.svg" alt="" />
+            </td>
+          </tr>
+          <tr  class="table-odd">
+            <td class="company-infos">
+              <input type="checkbox" class="company-info" />
+              <img
+                src="~assets/images/command.svg"
+                alt=""
+                class="company-info"
+              />
+              <div class="company-info">
+                <h5>Command+R</h5>
+                <p>cmdr.aio</p>
               </div>
             </td>
             <td><img src="~assets/images/Progress bar.svg" alt="" /></td>
@@ -243,12 +241,14 @@
                   alt=""
                   class="avatar"
                 />
+                 <h4 class="users-number">+2</h4>
               </div>
             </td>
             <td>
               <div class="company-info">
-                <h5>Content curating app</h5>
-                <p>Brings all your news into one place</p>
+                <h5>Data prediction</h5>
+                <p>AI and machine learning data
+                </p>
               </div>
             </td>
             <td class="info-edit">
@@ -260,13 +260,13 @@
             <td class="company-infos">
               <input type="checkbox" class="company-info" />
               <img
-                src="~assets/images/company1.svg"
+                src="~assets/images/hourglass.svg"
                 alt=""
                 class="company-info"
               />
               <div class="company-info">
-                <h5>Catalog</h5>
-                <p>catalogapp.io</p>
+                <h5>Hourglass</h5>
+                <p>hourglass.app</p>
               </div>
             </td>
             <td><img src="~assets/images/Progress bar.svg" alt="" /></td>
@@ -294,8 +294,56 @@
             </td>
             <td>
               <div class="company-info">
-                <h5>Content curating app</h5>
-                <p>Brings all your news into one place</p>
+                <h5>Productivity app</h5>
+                <p>Time management and productivity</p>
+              </div>
+            </td>
+            <td class="info-edit">
+              <img src="~assets/images/delete.svg" alt="" />
+              <img src="~assets/images/edit.svg" alt="" />
+            </td>
+          </tr>
+          <tr  class="table-odd">
+            <td class="company-infos">
+              <input type="checkbox" class="company-info" />
+              <img
+                src="~assets/images/layers.svg"
+                alt=""
+                class="company-info"
+              />
+              <div class="company-info">
+                <h5>Layers</h5>
+                <p>getlayers.io</p>
+              </div>
+            </td>
+            <td><img src="~assets/images/Progress bar.svg" alt="" /></td>
+            <td>Churned</td>
+            <td>
+              <div class="company-avatar">
+                <img src="~assets/images/Avatar-1.svg" alt="" class="avatar" />
+                <img
+                  src="~assets/images/Avatar (3).svg"
+                  alt=""
+                  class="avatar"
+                />
+                <img src="~assets/images/Avatar-1.svg" alt="" class="avatar" />
+                <img
+                  src="~assets/images/Avatar (2).svg"
+                  alt=""
+                  class="avatar"
+                />
+                <img
+                  src="~assets/images/Avatar (3).svg"
+                  alt=""
+                  class="avatar"
+                />
+                <h4 class="users-number">+1</h4>
+              </div>
+            </td>
+            <td>
+              <div class="company-info">
+                <h5>Web app integrations</h5>
+                <p>Connect web apps seamlessly</p>
               </div>
             </td>
             <td class="info-edit">
@@ -307,13 +355,13 @@
             <td class="company-infos">
               <input type="checkbox" class="company-info" />
               <img
-                src="~assets/images/company1.svg"
+                src="~assets/images/quotient.svg"
                 alt=""
                 class="company-info"
               />
               <div class="company-info">
-                <h5>Catalog</h5>
-                <p>catalogapp.io</p>
+                <h5>Quotient</h5>
+                <p>quotient.co</p>
               </div>
             </td>
             <td><img src="~assets/images/Progress bar.svg" alt="" /></td>
@@ -337,12 +385,13 @@
                   alt=""
                   class="avatar"
                 />
+                <h4 class="users-number">+6</h4>
               </div>
             </td>
             <td>
               <div class="company-info">
-                <h5>Content curating app</h5>
-                <p>Brings all your news into one place</p>
+                <h5>Sales CRM</h5>
+                <p>Web-based sales doc management</p>
               </div>
             </td>
             <td class="info-edit">
@@ -350,17 +399,17 @@
               <img src="~assets/images/edit.svg" alt="" />
             </td>
           </tr>
-          <tr>
+          <tr  class="table-odd">
             <td class="company-infos">
               <input type="checkbox" class="company-info" />
               <img
-                src="~assets/images/company1.svg"
+                src="~assets/images/sisiphus.svg"
                 alt=""
                 class="company-info"
               />
               <div class="company-info">
-                <h5>Catalog</h5>
-                <p>catalogapp.io</p>
+                <h5>Sisyphus</h5>
+                <p>sisyphus.com</p>
               </div>
             </td>
             <td><img src="~assets/images/Progress bar.svg" alt="" /></td>
@@ -384,106 +433,13 @@
                   alt=""
                   class="avatar"
                 />
+                <h4 class="users-number">+4</h4>
               </div>
             </td>
             <td>
               <div class="company-info">
-                <h5>Content curating app</h5>
-                <p>Brings all your news into one place</p>
-              </div>
-            </td>
-            <td class="info-edit">
-              <img src="~assets/images/delete.svg" alt="" />
-              <img src="~assets/images/edit.svg" alt="" />
-            </td>
-          </tr>
-          <tr>
-            <td class="company-infos">
-              <input type="checkbox" class="company-info" />
-              <img
-                src="~assets/images/company1.svg"
-                alt=""
-                class="company-info"
-              />
-              <div class="company-info">
-                <h5>Catalog</h5>
-                <p>catalogapp.io</p>
-              </div>
-            </td>
-            <td><img src="~assets/images/Progress bar.svg" alt="" /></td>
-            <td>Customer</td>
-            <td>
-              <div class="company-avatar">
-                <img src="~assets/images/Avatar-1.svg" alt="" class="avatar" />
-                <img
-                  src="~assets/images/Avatar (3).svg"
-                  alt=""
-                  class="avatar"
-                />
-                <img src="~assets/images/Avatar-1.svg" alt="" class="avatar" />
-                <img
-                  src="~assets/images/Avatar (2).svg"
-                  alt=""
-                  class="avatar"
-                />
-                <img
-                  src="~assets/images/Avatar (3).svg"
-                  alt=""
-                  class="avatar"
-                />
-              </div>
-            </td>
-            <td>
-              <div class="company-info">
-                <h5>Content curating app</h5>
-                <p>Brings all your news into one place</p>
-              </div>
-            </td>
-            <td class="info-edit">
-              <img src="~assets/images/delete.svg" alt="" />
-              <img src="~assets/images/edit.svg" alt="" />
-            </td>
-          </tr>
-          <tr>
-            <td class="company-infos">
-              <input type="checkbox" class="company-info" />
-              <img
-                src="~assets/images/company1.svg"
-                alt=""
-                class="company-info"
-              />
-              <div class="company-info">
-                <h5>Catalog</h5>
-                <p>catalogapp.io</p>
-              </div>
-            </td>
-            <td><img src="~assets/images/Progress bar.svg" alt="" /></td>
-            <td>Customer</td>
-            <td>
-              <div class="company-avatar">
-                <img src="~assets/images/Avatar-1.svg" alt="" class="avatar" />
-                <img
-                  src="~assets/images/Avatar (3).svg"
-                  alt=""
-                  class="avatar"
-                />
-                <img src="~assets/images/Avatar-1.svg" alt="" class="avatar" />
-                <img
-                  src="~assets/images/Avatar (2).svg"
-                  alt=""
-                  class="avatar"
-                />
-                <img
-                  src="~assets/images/Avatar (3).svg"
-                  alt=""
-                  class="avatar"
-                />
-              </div>
-            </td>
-            <td>
-              <div class="company-info">
-                <h5>Content curating app</h5>
-                <p>Brings all your news into one place</p>
+                <h5>Automation and workflow</h5>
+                <p>Time tracking, invoicing and expenses</p>
               </div>
             </td>
             <td class="info-edit">
@@ -507,91 +463,19 @@
 </template>
 
 <script>
-export default {};
+import  Header from '../components/Header.vue'
+export default {
+  components: {
+    Header
+  }
+};
 </script>
 <style>
-.header-left {
-  display: flex;
-}
-.header-right {
-  justify-content: space-between;
-  display: flex;
-  margin-right: 5rem;
-}
-.header-bottom {
-  margin-right: 5rem;
-  display: flex;
-  justify-content: space-between;
-}
 
-.header-nav {
-  display: flex;
-  justify-content: space-between;
-  border-bottom: 1px #eaecf0 solid;
-}
-
-h3 {
-  font-family: Inter;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 30px;
-  line-height: 38px;
-  color: #101828;
-}
-p {
-  color: #667085;
-}
-.nav-bar {
-  margin: -1.5rem;
-}
-.logo-bar {
-  margin-left: 3rem;
-}
-
-.upgrade-btn {
-  height: 40px;
-  background: #ffffff;
-  border: 1px solid #eaecf0;
-  box-sizing: border-box;
-  box-shadow: 0px 1px 3px rgba(16, 24, 40, 0.1),
-    0px 1px 2px rgba(16, 24, 40, 0.06);
-  border-radius: 8px;
-  padding: 0 1rem;
-}
-.search-btn {
-  width: 50px;
-  height: 40px;
-  padding-right: 250px;
-  margin-top: 1rem;
-  background: #ffffff;
-  border: 1px solid #d0d5dd;
-  box-sizing: border-box;
-  box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
-  border-radius: 8px;
-}
-.setting-btn {
-  padding: 0.5rem;
-  margin-bottom: 1rem;
-}
-.nav-list {
-  display: flex;
-  list-style-type: none;
-  font-family: Inter;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 24px;
-}
-.nav-item {
-  padding: 1rem;
-}
-.nav-item a {
-  text-decoration: none;
-}
 .section-1 {
   display: flex;
   justify-content: space-between;
-  margin: 0rem 5rem 0rem 3rem;
+  margin: 1rem 5rem 0rem 5rem;
 }
 
 .add-btn {
@@ -599,24 +483,29 @@ p {
   border: 1px solid #7f56d9;
   color: #ffffff;
   border-radius: 8px;
-  padding: 7px 15px;
+  padding: 10px 20px;
+  margin: 1rem 0;
 }
 .import-btn {
+  margin: 1rem;
   background: #ffffff;
   border: 1px solid #d0d5dd;
   box-sizing: border-box;
   border-radius: 8px;
   color: #344054;
-  padding: 5px 5px;
-  margin-right: 0.2rem;
+  padding: 10px 15px;
 }
 .welcome-note {
   margin: -2rem;
   margin-left: 0.2rem;
 }
-.section-2,
+.section-2 {
+  margin: 2rem 5rem 0rem 5rem;
+  display: flex;
+  justify-content: space-between;
+}
 .section-3 {
-  margin: 5rem 5rem 0rem 3rem;
+  margin: 1rem 5rem 0rem 5rem;
   display: flex;
   justify-content: space-between;
 }
@@ -640,23 +529,27 @@ p {
   justify-content: space-between;
 }
 .date-btn {
-  padding: 5px 20px;
+  margin: .5rem;
+  padding: .5rem;
   background: #f9f5ff;
   border: 1px solid #f9f5ff;
-  box-sizing: border-box;
+  
   box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
   border-radius: 8px;
+  color: #6941C6;
+
 }
 .more-btn {
-  padding: 0 20px;
+  padding: 0 2rem 0 2rem;
+ margin: .5rem;
   background: #ffffff;
   border: 1px solid #d0d5dd;
-  box-sizing: border-box;
+  
   box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
   border-radius: 8px;
 }
 .section-4 {
-  margin: 5rem 5rem 0rem 3rem;
+  margin: 1rem 5rem 0rem 5rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -670,12 +563,20 @@ p {
 table {
   width: 100%;
 }
+/* .table-head {
+  background-color: #667085;
+  width: 100%;
+  height: 2%;
+} */
+.table-odd {
+  background-color: #F9FAFB;
+}
 .company-infos {
   display: flex;
   flex-direction: row;
   align-items: center;
   padding: 16px 24px;
-  width: 370px;
+  width: 200px;
   height: 40px;
 }
 .company-info {
@@ -703,7 +604,6 @@ footer {
   display: flex;
   justify-content: space-between;
   margin: 1rem 3rem;
- 
 }
 
 .previous-btn {
@@ -713,6 +613,5 @@ footer {
   box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
   border-radius: 6px;
   padding: 0.5rem;
-  
 }
 </style>
