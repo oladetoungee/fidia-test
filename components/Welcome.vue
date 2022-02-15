@@ -1,6 +1,6 @@
 <template>
-     <div class="section-1">
-        <div class="welcome">
+     <div class="welcome">
+        <div >
           <h3>Welcome back, Olivia</h3>
           <p class="welcome-note">
             Track, manage and forecast your customers and orders.
@@ -8,7 +8,8 @@
         </div>
         <div class="welcome-btns">
           <button class="import-btn">
-            <img src="~assets/images/cloud.svg" alt="" />Import
+            <img src="~assets/images/cloud.svg" alt=""  />
+            Import
           </button>
           <button class="add-btn">
             <img src="~assets/images/add.svg" alt="" />Add
@@ -22,7 +23,7 @@ export default {
 }
 </script>
 <style>
-    .section-1 {
+    .welcome {
     display: flex;
     justify-content: space-between;
     margin: 1rem 5rem 0rem 5rem;
@@ -37,16 +38,30 @@ export default {
     margin: 1rem 0;
     }
     .import-btn {
+        
     margin: 1rem;
     background: #ffffff;
     border: 1px solid #d0d5dd;
     box-sizing: border-box;
     border-radius: 8px;
     color: #344054;
-    padding: 10px 15px;
+    padding: 7px 15px;
     }
+    
     .welcome-note {
-    margin: -2rem;
+    margin: -1.5rem;
     margin-left: 0.2rem;
     }
+    @media (max-width: 800px) {
+        .welcome {
+            flex-direction: column;
+            margin: 0 2rem;
+        }
+        .welcome-btns {
+            margin-top: 2rem;
+            margin-left: -1rem;
+            
+        }
+    }
+
 </style>

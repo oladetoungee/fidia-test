@@ -19,7 +19,9 @@ export default {
 </script>
     Appfilter
 <style>
-
+  html {
+    font-family: Inter;
+  }
 
 
 

@@ -32,6 +32,9 @@
             <img src="~assets/images/Avatar.svg" alt="" />
           </div>
         </div>
+        <div class="menu-btn">
+          <img src="~/assets/images/menu-btn.svg" alt="">
+        </div>
       </div>
 
       <div class="header-bottom">
@@ -80,6 +83,7 @@ export default {
     display: flex;
     justify-content: space-between;
     border-bottom: 1px #eaecf0 solid;
+    
     }
 
     h3 {
@@ -109,10 +113,10 @@ export default {
         0px 1px 2px rgba(16, 24, 40, 0.06);
     border-radius: 8px;
     padding: 0 .7rem;
-    margin-right: .5rem;
+    margin-right: .8rem;
     }
     .avatar-btn {
-    margin-left: .5rem;
+    margin-left: .8rem;
     }
     input {
     border: none;
@@ -134,10 +138,14 @@ export default {
     .setting-btn {
     width: 30px;
 
-    margin: 0 0.2rem 0.5rem 0.2rem;
+    margin: 0 0.2rem 0.5rem .2rem;
     }
+    
     .setting-btn {
     padding-top: 0.5rem;
+    }
+    .menu-btn {
+      display: none;
     }
 
     .nav-list {
@@ -155,4 +163,32 @@ export default {
     .nav-item a {
     text-decoration: none;
     }
+    @media (max-width: 1180px) {
+    .header-nav, .header-bottom {
+      flex-direction: column;
+    }
+    .header-right, .header-search {
+      margin-left: 3rem;
+      margin-top: 2rem;
+     
+    }
+    
+    
+  }
+    @media (max-width: 800px) {
+      .nav-bar, .header-right, .header-bottom {
+        display: none;
+      }
+      .menu-btn {
+        display: block;
+      }
+      .header-nav {
+        display: flex;
+        flex-direction: row;
+      }
+      header {
+        margin: 1rem 0 0 -1rem;
+      }
+    }
+ 
 </style>
