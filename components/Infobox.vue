@@ -1,8 +1,8 @@
 <template>
-     <div class="section-2">
+     <div class="info-boxes">
         <div class="info-box">
           <div class="info-text">
-            <p class="info-text-p">Total customers</p>
+            <h4 class="info-text-p">Total customers</h4>
             <img class="info-text-dot" src="~assets/images/three.svg" alt="" />
           </div>
           <div class="info-data">
@@ -66,16 +66,12 @@ export default {
 }
 </script>
 <style>
-    .section-2 {
-    margin: 2rem 5rem 0rem 5rem;
+    .info-boxes {
+    margin: 4rem 5rem 0rem 5rem;
     display: flex;
     justify-content: space-between;
     }
-    .section-3 {
-    margin: 1rem 5rem 0rem 5rem;
-    display: flex;
-    justify-content: space-between;
-    }
+    
     .info-box {
     background: #ffffff;
     border: 1px solid #eaecf0;
@@ -90,5 +86,31 @@ export default {
     display: flex;
     justify-content: space-between;
     padding: 1rem;
+    }
+    @media (max-width: 1430px) {
+        .info-box {
+            width: 350px;
+        }
+    }
+    @media (max-width: 1200px) {
+        .info-box {
+            width: 300px;
+        }
+    }
+    @media (max-width: 1100px) {
+        .info-box {
+            width: 200px;
+        }
+    }
+    @media (max-width: 800px) {
+        .info-boxes {
+          flex-direction: column;
+            margin: 0 2rem;
+            
+        }
+        .info-box {
+            width: 100%;
+            margin: 1rem 0;
+        }
     }
 </style>
