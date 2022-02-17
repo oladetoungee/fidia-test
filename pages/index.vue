@@ -9,8 +9,7 @@
 </template>
 
 <script>
-import Appfilter from '../components/Appfilter.vue';
-import  Header from '../components/Header.vue'
+import Header from '../components/Header.vue'
 export default {
   components: {
     Header

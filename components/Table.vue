@@ -8,9 +8,9 @@
               <img src="~assets/images/arrow.svg" alt="" class="company-info" />
             </td>
             <td><p>License Use</p></td>
-            <td><p>Status</p></td>
-            <td><p>Users</p></td>
-            <td><p>About</p></td>
+            <td><p class="table-status">Status</p></td>
+            <td><p class="table-user">Users</p></td>
+            <td><p class="table-about">About</p></td>
           </tr>
           <tr  class="table-odd">
             <td class="company-infos">
@@ -26,8 +26,8 @@
               </div>
             </td>
             <td><img src="~assets/images/Progress bar.svg" alt="" /></td>
-            <td > <p class="status-cus">Customer</p> </td>
-            <td>
+            <td class="table-status"> <p class="status-cus">Customer</p> </td>
+            <td class="table-user">
               <div class="company-avatar">
                 <img src="~assets/images/Avatar-1.svg" alt="" class="avatar" />
                 <img
@@ -52,7 +52,7 @@
                
               </div>
             </td>
-            <td>
+            <td class="table-about">
               <div class="company-info">
                 <h5>Content curating app</h5>
                 <p>Brings all your news into one place</p>
@@ -77,8 +77,8 @@
               </div>
             </td>
             <td><img src="~assets/images/Progress bar.svg" alt="" /></td>
-             <td > <p class="status-churn">Churned</p> </td>
-            <td>
+             <td class="table-status"> <p class="status-churn">Churned</p> </td>
+            <td class="table-user">
               <div class="company-avatar">
                 <img src="~assets/images/Avatar-1.svg" alt="" class="avatar" />
                 <img
@@ -102,7 +102,7 @@
                
               </div>
             </td>
-            <td>
+            <td class="table-about">
               <div class="company-info">
                 <h5>Design software</h5>
                 <p>Super lightweight design app</p>
@@ -127,8 +127,8 @@
               </div>
             </td>
             <td><img src="~assets/images/progress (1).svg" alt="" /></td>
-             <td > <p class="status-cus">Customer</p> </td>
-            <td>
+             <td class="table-status"> <p class="status-cus">Customer</p> </td>
+            <td class="table-user">
               <div class="company-avatar">
                 <img src="~assets/images/Avatar-1.svg" alt="" class="avatar" />
                 <img
@@ -150,7 +150,7 @@
                  <h4 class="users-number">+2</h4>
               </div>
             </td>
-            <td>
+            <td class="table-about">
               <div class="company-info">
                 <h5>Data prediction</h5>
                 <p>AI and machine learning data
@@ -176,8 +176,8 @@
               </div>
             </td>
             <td><img src="~assets/images/Progresss.svg" alt="" /></td>
-             <td > <p class="status-cus">Customer</p> </td>
-            <td>
+             <td class="table-status" > <p class="status-cus">Customer</p> </td>
+            <td class="table-user">
               <div class="company-avatar">
                 <img src="~assets/images/Avatar-1.svg" alt="" class="avatar" />
                 <img
@@ -198,7 +198,7 @@
                 />
               </div>
             </td>
-            <td>
+            <td class="table-about">
               <div class="company-info">
                 <h5>Productivity app</h5>
                 <p>Time management and productivity</p>
@@ -223,8 +223,8 @@
               </div>
             </td>
             <td><img src="~assets/images/progression.svg" alt="" /></td>
-             <td > <p class="status-churn">Churned</p> </td>
-            <td>
+             <td class="table-status"> <p class="status-churn">Churned</p> </td>
+            <td class="table-user">
               <div class="company-avatar">
                 <img src="~assets/images/Avatar-1.svg" alt="" class="avatar" />
                 <img
@@ -246,7 +246,7 @@
                 <h4 class="users-number">+1</h4>
               </div>
             </td>
-            <td>
+            <td class="table-about">
               <div class="company-info">
                 <h5>Web app integrations</h5>
                 <p>Connect web apps seamlessly</p>
@@ -271,8 +271,8 @@
               </div>
             </td>
             <td><img src="~assets/images/Progress bar.svg" alt="" /></td>
-             <td > <p class="status-cus">Customer</p> </td>
-            <td>
+             <td class="table-status"> <p class="status-cus">Customer</p> </td>
+            <td class="table-user">
               <div class="company-avatar">
                 <img src="~assets/images/Avatar-1.svg" alt="" class="avatar" />
                 <img
@@ -294,7 +294,7 @@
                 <h4 class="users-number">+6</h4>
               </div>
             </td>
-            <td>
+            <td class="table-about">
               <div class="company-info">
                 <h5>Sales CRM</h5>
                 <p>Web-based sales doc management</p>
@@ -319,8 +319,8 @@
               </div>
             </td>
             <td><img src="~assets/images/Progress bar.svg" alt="" /></td>
-             <td > <p class="status-cus">Customer</p> </td>
-            <td>
+             <td class="table-status"> <p class="status-cus">Customer</p> </td>
+            <td class="table-user">
               <div class="company-avatar">
                 <img src="~assets/images/Avatar-1.svg" alt="" class="avatar" />
                 <img
@@ -342,7 +342,7 @@
                 <h4 class="users-number">+4</h4>
               </div>
             </td>
-            <td>
+            <td class="table-about">
               <div class="company-info">
                 <h5>Automation and workflow</h5>
                 <p>Time tracking, invoicing and expenses</p>
@@ -462,4 +462,33 @@ export default {
     border-radius: 6px;
     padding: 0.5rem;
     }
+     @media (max-width: 800px) {
+        .info-edit, .table-about, .table-user {
+          display: none;
+        }
+     }
+    @media (max-width: 1190px) {
+        .info-edit {
+          display: none;
+        }
+    }
+     @media (max-width: 1000px) {
+        .table-about, .table-user {
+          display: none;
+        }
+      .section-4 {
+        margin: 1rem 2rem;
+      }  
+          
+    }
+     @media (max-width: 750px) {
+        .table-status {
+          display: none;
+        }
+          
+    }
+     
+    
+
+
 </style>

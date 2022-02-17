@@ -103,7 +103,6 @@ export default {
     .logo-bar {
     margin-left: 3rem;
     }
-
     .upgrade-btn {
     height: 40px;
     background: #ffffff;

@@ -23,8 +23,8 @@
             
 
 
-        <div class="header-search">
-          <form class="search-btn">
+        <div class="filter-search">
+          <form class="filter-search-btn">
             <img src="~assets/images/Iconnn.svg" alt="" />
             <input type="search" placeholder="Search" />
           </form>
@@ -60,8 +60,21 @@ export default {
     color: #6941C6;
 
     }
+    .filter-search-btn {
+    /* margin-right: 5rem; */
+    display: flex;
+    width: 65px;
+    height: 40px;
+    padding-right: 250px;
+    margin-top: 1rem;
+    background: #ffffff;
+    border: 1px solid #d0d5dd;
+    box-sizing: border-box;
+    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+    border-radius: 8px;
+    }
     .more-btn {
-    padding: 0 2rem 0 2rem;
+    padding: 1rem 1.5rem;
     margin: .5rem;
     background: #ffffff;
     border: 1px solid #d0d5dd;
@@ -75,24 +88,34 @@ export default {
             margin: 0 2rem;
             
         }
-        .header-btn, .filter-dates {
-          margin: 0 2rem 0 2rem;
-        }
+       
         .filter-dates {
           display: flex;
           flex-direction: row;
-          justify-items: flex-start;
+         margin: 0 -3rem;
         }
-        .search-btn {
-          
+        .edit-more {
+          display: flex;
+          flex-direction: row;
+         margin: 1rem -4rem;
+        }
+        .filter-search-btn {
           width: 100%;
         }
         .more-btn {
+          margin: 1rem 2rem;
+          width: 100%;
+        }
+        
+        /* .search-btn {
+          width: 100%;
+        } */
+        /* .more-btn {
           justify-self: center;
           margin: 1rem -5rem 1rem 0rem;
           padding: 1rem ;
           width: 400px;
-        }
+        } */
         
 
         
