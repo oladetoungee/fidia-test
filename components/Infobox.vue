@@ -21,7 +21,7 @@
         </div>
         <div class="info-box">
           <div class="info-text">
-            <p class="info-text-p">Members</p>
+           <h4 class="info-text-p">Members</h4>
             <img class="info-text-dot" src="~assets/images/three.svg" alt="" />
           </div>
           <div class="info-data">
@@ -41,7 +41,7 @@
         </div>
         <div class="info-box">
           <div class="info-text">
-            <p class="info-text-p">TActive now</p>
+            <h4 class="info-text-p">Active now</h4>
             <img class="info-text-dot" src="~assets/images/three.svg" alt="" />
           </div>
           <div class="info-data">
@@ -89,7 +89,7 @@ export default {
     }
     @media (max-width: 1430px) {
         .info-box {
-            width: 350px;
+            width: 375px;
         }
     }
     @media (max-width: 1200px) {
@@ -99,7 +99,7 @@ export default {
     }
     @media (max-width: 1100px) {
         .info-box {
-            width: 200px;
+            width: 250px;
         }
     }
     @media (max-width: 800px) {

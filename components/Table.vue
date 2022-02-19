@@ -355,12 +355,19 @@
           </tr>
         </table>
         <footer>
+          <div class="arroww">
+             <img src="~assets/images/_Buttonbase.svg" alt="" class="arrow-right">
+          </div>
           <div class="footer-transition">
+            
             <button class="previous-btn">Previous</button>
             <button class="previous-btn">Next</button>
           </div>
           <div class="footer-page">
             <p>Page 1 of 10</p>
+          </div>
+          <div class="arrow">
+             <img src="~assets/images/_Button base.svg" alt="" class="arrow-right">
           </div>
         </footer>
       </div>
@@ -382,6 +389,9 @@ export default {
     0px 1px 2px rgba(16, 24, 40, 0.06);
   border-radius: 8px;
     }
+  .arrow, .arroww {
+    display: none;
+  }
 
     table {
     width: 100%;
@@ -477,16 +487,24 @@ export default {
           display: none;
         }
       .section-4 {
-        margin: 1rem 2rem;
+        margin: 1rem 0;
       }  
           
     }
      @media (max-width: 750px) {
-        .table-status {
+        .table-status, .footer-transition {
           display: none;
         }
+        .arrow, .arroww {
+          display: block;
+        }
+        footer {
+          margin: 0;
+        }
+      
           
     }
+   
      
     
 
