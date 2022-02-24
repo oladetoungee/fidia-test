@@ -31,18 +31,18 @@
               <div class="company-avatar">
                 <img src="~assets/images/Avatar-1.svg" alt="" class="avatar" />
                 <img
-                  src="~assets/images/Avatar (3).svg"
+                  src="~assets/images/personn.svg"
                   alt=""
                   class="avatar"
                 />
                 <img src="~assets/images/Avatar-1.svg" alt="" class="avatar" />
                 <img
-                  src="~assets/images/Avatar (2).svg"
+                  src="~assets/images/person.svg"
                   alt=""
                   class="avatar"
                 />
                 <img
-                  src="~assets/images/Avatar (3).svg"
+                  src="~assets/images/personn.svg"
                   alt=""
                   class="avatar"
                 />
@@ -82,18 +82,18 @@
               <div class="company-avatar">
                 <img src="~assets/images/Avatar-1.svg" alt="" class="avatar" />
                 <img
-                  src="~assets/images/Avatar (3).svg"
+                  src="~assets/images/personn.svg"
                   alt=""
                   class="avatar"
                 />
                 <img src="~assets/images/Avatar-1.svg" alt="" class="avatar" />
                 <img
-                  src="~assets/images/Avatar (2).svg"
+                  src="~assets/images/person.svg"
                   alt=""
                   class="avatar"
                 />
                 <img
-                  src="~assets/images/Avatar (3).svg"
+                  src="~assets/images/personn.svg"
                   alt=""
                   class="avatar"
                 />
@@ -126,24 +126,24 @@
                 <p>cmdr.aio</p>
               </div>
             </td>
-            <td><img src="~assets/images/progress (1).svg" alt="" /></td>
+            <td><img src="~assets/images/progressss.svg" alt="" /></td>
              <td class="table-status"> <p class="status-cus">Customer</p> </td>
             <td class="table-user">
               <div class="company-avatar">
                 <img src="~assets/images/Avatar-1.svg" alt="" class="avatar" />
                 <img
-                  src="~assets/images/Avatar (3).svg"
+                  src="~assets/images/personn.svg"
                   alt=""
                   class="avatar"
                 />
                 <img src="~assets/images/Avatar-1.svg" alt="" class="avatar" />
                 <img
-                  src="~assets/images/Avatar (2).svg"
+                  src="~assets/images/person.svg"
                   alt=""
                   class="avatar"
                 />
                 <img
-                  src="~assets/images/Avatar (3).svg"
+                  src="~assets/images/personn.svg"
                   alt=""
                   class="avatar"
                 />
@@ -181,18 +181,18 @@
               <div class="company-avatar">
                 <img src="~assets/images/Avatar-1.svg" alt="" class="avatar" />
                 <img
-                  src="~assets/images/Avatar (3).svg"
+                  src="~assets/images/personn.svg"
                   alt=""
                   class="avatar"
                 />
                 <img src="~assets/images/Avatar-1.svg" alt="" class="avatar" />
                 <img
-                  src="~assets/images/Avatar (2).svg"
+                  src="~assets/images/person.svg"
                   alt=""
                   class="avatar"
                 />
                 <img
-                  src="~assets/images/Avatar (3).svg"
+                  src="~assets/images/personn.svg"
                   alt=""
                   class="avatar"
                 />
@@ -228,18 +228,18 @@
               <div class="company-avatar">
                 <img src="~assets/images/Avatar-1.svg" alt="" class="avatar" />
                 <img
-                  src="~assets/images/Avatar (3).svg"
+                  src="~assets/images/personn.svg"
                   alt=""
                   class="avatar"
                 />
                 <img src="~assets/images/Avatar-1.svg" alt="" class="avatar" />
                 <img
-                  src="~assets/images/Avatar (2).svg"
+                  src="~assets/images/person.svg"
                   alt=""
                   class="avatar"
                 />
                 <img
-                  src="~assets/images/Avatar (3).svg"
+                  src="~assets/images/personn.svg"
                   alt=""
                   class="avatar"
                 />
@@ -276,18 +276,18 @@
               <div class="company-avatar">
                 <img src="~assets/images/Avatar-1.svg" alt="" class="avatar" />
                 <img
-                  src="~assets/images/Avatar (3).svg"
+                  src="~assets/images/personn.svg"
                   alt=""
                   class="avatar"
                 />
                 <img src="~assets/images/Avatar-1.svg" alt="" class="avatar" />
                 <img
-                  src="~assets/images/Avatar (2).svg"
+                  src="~assets/images/person.svg"
                   alt=""
                   class="avatar"
                 />
                 <img
-                  src="~assets/images/Avatar (3).svg"
+                  src="~assets/images/personn.svg"
                   alt=""
                   class="avatar"
                 />
@@ -324,18 +324,18 @@
               <div class="company-avatar">
                 <img src="~assets/images/Avatar-1.svg" alt="" class="avatar" />
                 <img
-                  src="~assets/images/Avatar (3).svg"
+                  src="~assets/images/personn.svg"
                   alt=""
                   class="avatar"
                 />
                 <img src="~assets/images/Avatar-1.svg" alt="" class="avatar" />
                 <img
-                  src="~assets/images/Avatar (2).svg"
+                  src="~assets/images/person.svg"
                   alt=""
                   class="avatar"
                 />
                 <img
-                  src="~assets/images/Avatar (3).svg"
+                  src="~assets/images/personn.svg"
                   alt=""
                   class="avatar"
                 />
@@ -367,7 +367,7 @@
             <p>Page 1 of 10</p>
           </div>
           <div class="arrow">
-             <img src="~assets/images/_Button base.svg" alt="" class="arrow-right">
+             <img src="~assets/images/_Buttonbbase.svg" alt="" class="arrow-right">
           </div>
         </footer>
       </div>
