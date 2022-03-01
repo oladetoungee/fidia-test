@@ -56,5 +56,9 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
+  },
+  env: {
+    baseUrl: process.env.BASE_URL || 'https://oliviafidia-default-rtdb.firebaseio.com/',
+    fbAPIKey: 'AIzaSyD_pqb68s798t0QfQcAGdtHpGeYm-iiClo'
   }
 }
