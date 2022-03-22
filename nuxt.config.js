@@ -17,7 +17,10 @@ export default {
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.png' }
       
-    ]
+    ],
+    script: [
+      { src: 'https://kit.fontawesome.com/ecf8b0c6ec.js', crossorigin:"anonymous"}
+      ]
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
@@ -35,8 +38,9 @@ export default {
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
+    '@nuxtjs/fontawesome',
   ],
-
+ 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     // https://go.nuxtjs.dev/axios
